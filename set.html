@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>set数据结构</title>
+    </head>
+    <body>
+        
+        <script>
+            // const s = new Set();
+            // [2, 3, 5, 4, 5, 2, 2].forEach(x => s.add(x));
+            // for (let i of s) {
+            //     console.log(i);
+            // }
+
+            // const set = new Set([1,2,3,4,4]);
+            // for (let i of set){
+            //     console.log(i);
+            // }
+
+            // const s = new Set([1, 2, 3, 4, 5, 5, 5]);
+            // console.log(s.size);
+            // console.log(s.has(1));
+            // console.log(s.has(9));
+            // s.add(9);//增加一个元素9，返回Set结构本身
+            // s.delete(1);//删除元素1,返回一个布尔值，表示删除是否成功
+            // console.log(s.has(1));//返回一个布尔值，表示参数是否为Set的成员
+            // console.log(s.has(9));
+            // s.clear();//清除所有成员，没有返回值
+            // console.log(s);
+
+            // let set = new Set([1,2,3]);
+            // set.forEach((value,key) => console.log(value*2));
+
+            // let a = new Set([1, 2, 3]);
+            // let b = new Set([4, 5, 6]);
+            // //并集
+            // // let union = new Set(for (let i of a), for (let i of b) { });
+            // console.log(union);
+
+
+            let set = new Set([1, 2, 3]);
+            set = new Set(Array.from(set, val => val * 2));
+            console.log(set);
+        </script>
+    </body>
+</html>
